@@ -7,9 +7,9 @@
 def insert_two_number(arg_1, arg_2):
     try:
         result = arg_1/arg_2
-    except ValueError:
+    except ZeroDivisionError:
         print("на ноль делить нельзя")
-        return none
+    return none
 
     return result
 print(insert_two_number(arg_1 = int(input("insert number 1")), arg_2 = int(input("insert number 2"))))
